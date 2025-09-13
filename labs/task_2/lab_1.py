@@ -14,7 +14,7 @@ def read_matrices_from_file(file_path):
     Raises:
         ValueError: Если файл содержит некорректные данные или матрицы нельзя перемножить
     '''
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         lines = [line.strip() for line in file]
 
     # Разделяем матрицы (предполагаем, что они разделены пустой строкой)
